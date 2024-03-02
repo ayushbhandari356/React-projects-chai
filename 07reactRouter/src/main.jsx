@@ -47,8 +47,10 @@ const router =createBrowserRouter(
       <Route path="" element={<Home></Home>} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
+      {/* user / ke bad colon aata hai wo id database se lete hai jasi facebook me different users hote hain to sabki id alag hoti hai bs baki ui same hi hota */}
       <Route path="user/:userid" element={<User />} />
       <Route
+      // loader is used to optimised the react app more then useEffect hook
        loader={githubInfoLoader}
        path="github" 
        element={<Github1 />} />

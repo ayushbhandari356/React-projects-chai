@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom'
 
+// useLoaderData se hover karne par hi fetching shuru ho jati hai
+
+
 function Github1() {
     const data=useLoaderData()
     // const [data,setData]=useState([])
