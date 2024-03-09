@@ -71,6 +71,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { removeTodo, updateTodo } from "../features/todo/todoSlice";
 
 function Todos() {
+  // useSlector gives us a state in callback
   const todos = useSelector((state) => state.todos);
   const dispatch = useDispatch();
 
@@ -87,7 +88,7 @@ function Todos() {
 
   return (
     <div className="mt-4">
-      <h2 className="text-lg font-semibold mb-4">Todos</h2>
+      <h2 className="text-lg font-semibold mb-4 text-slate-200">Your List</h2>
       <div className="flex justify-center">
       <ul className="space-y-2 w-1/2">
         {todos.map((todo) => (

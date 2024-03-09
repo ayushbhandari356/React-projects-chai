@@ -5,6 +5,9 @@ function Login() {
     const [username,setUsername]=useState("")
     const [password,setPassword]=useState("")
 // here we are setting the data in setUser
+
+{/*object destructuring form UserContext*/};
+
     const {setUser}=useContext(UserContext)
 
 

@@ -20,10 +20,13 @@ function App() {
     /*Defining functionalities here from the context function should of the same name*/
   }
   {
-    /*here todo come from the fom*/
+    /*here todo come from the form*/
   }
 
   const addTodo = (todo) => {
+    /*(prev) => [...]: This is an arrow function that takes the previous state (prev) of the todos as an argument and returns a new array of todos.
+
+    [{ id: Date.now(), ...todo }, ...prev]: This is the new array of todos returned by the arrow function. It consists of:*/ 
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
   };
   {

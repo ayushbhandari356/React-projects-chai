@@ -1,1 +1,2 @@
 export {TodoContext , useTodo, TodoProvider} from "./TodoContext1"
+// difference between context and redux toolkit is that state is preserved in toolkit while we use spread syntax in context api so that state will preserved

@@ -3,15 +3,17 @@ import { useTodo } from '../Context';
 import { useState } from 'react';
 
 function TodoForm() {
-    {/*this todo is for individual todo*/};
+    {/*this todo is for individual todo means local todo of this file */};
     
     const [todo,setTodo]=useState("")
+    // addtodo - we are object destructuring here from useTodo
     const {addTodo}=useTodo()
 
     const add=(e)=>{
         e.preventDefault()
         if(!todo)return
         addTodo({todo:todo,completed:false})
+        // now making the todo empty for next todo to be written
         setTodo("")
     }
 

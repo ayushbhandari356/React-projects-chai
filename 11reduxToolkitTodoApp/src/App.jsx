@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <h1>auhdu</h1>
+    
     <AddTodo/>
     <Todos/>
     </>

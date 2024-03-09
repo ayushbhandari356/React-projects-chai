@@ -15,9 +15,10 @@ function AddTodo() {
   return (
     <div>
       <form onSubmit={addTodoHandler} className=" Space-x-3 mt-12">
+        
         <input
           type="text"
-          className="px-4 py-2 border border-red-900 rounded-l focus:outline-none focus:border-blue-500"
+          className="px-4 py-2 border border-red-900 rounded-l focus:outline-none focus:border-blue-500 w-1/3"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
