@@ -37,7 +37,7 @@ export const todoSlice = createSlice({
         //     const todoToUpdate = state.todos.find(todo => todo.id === action.payload.id);
         //     if (todoToUpdate) {
         //         todoToUpdate.text = newText;
-        //     }
+        //     }    
         // }
         
         
@@ -45,7 +45,7 @@ export const todoSlice = createSlice({
     }
 })
 {/*below one is for reducer invidually export so that they can be used in the component*/};
-
+// addtodo,etc are the actions in the reducer
 export const {addTodo, updateTodo,removeTodo}=todoSlice.actions
 
 
