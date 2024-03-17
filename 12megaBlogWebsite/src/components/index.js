@@ -11,8 +11,21 @@ import Signup from "./Signup";
 import Login from "./Login";
 import PostForm from "./post-form/PostForm";
 import PostCard from "./Postcard";
-import Protected from "./AuthLayout";
+import AuthLayout from "./AuthLayout";
 
-export{
-    Header, Footer, Containers, Logo, LogoutBtn,Button,Input,RTE,Select,Signup,Login,PostForm,PostCard,AuthLayout,
-}
+export {
+  Header,
+  Footer,
+  Containers,
+  Logo,
+  LogoutBtn,
+  Button,
+  Input,
+  RTE,
+  Select,
+  Signup,
+  Login,
+  PostForm,
+  PostCard,
+  AuthLayout,
+};
